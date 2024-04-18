@@ -2,17 +2,7 @@
 // A class component must include the extends React.Component statement. This statement creates an inheritance to React.Component, and gives your component access to React.Component's functions.
 //The component also requires a render() method, this method returns HTML.
 
-// Class component (Outdated?)
-class Car extends React.Component {
-    render() {
-        return <h2>Hi, I am a Car!</h2>;
-    }
-}
 
-// Function component (props are properties)
-function Car(props) {
-    return <h2>I am a {props.color} Car!</h2>;
-}
   
 // Render component with prop
 /*
@@ -53,3 +43,15 @@ import Car from './Car.js';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<Car />);
+
+// Class component (Outdated)
+class Car extends React.Component {
+    render() {
+        return <h2>Hi, I am a Car!</h2>;
+    }
+}
+
+// Function component (props are properties)
+function Car(props) {
+    return <h2>I am a {props.color} Car!</h2>;
+}
